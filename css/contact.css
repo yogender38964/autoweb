@@ -1,0 +1,123 @@
+.contact-section {
+    padding: 20px 100px; /* Reduced padding for a more compact section */
+    background: url('../Image/contact-automation-happy-customers-bgs.webp') no-repeat center center/cover; /* Add background image */
+    color: #fff; /* White text color for better contrast against the background */
+  }
+  
+  .contact-section .container {
+    max-width: 800px; /* Reduced maximum width for a more compact container */
+    margin: 0 auto;
+    text-align: center; /* Center-align text within the container */
+  }
+  
+  .contact-section p {
+    font-size: 0.8rem; /* Smaller font size */
+    color: #ffffff; /* White text color */
+    margin-bottom: 15px; /* Reduced margin */
+  }
+  
+  .contact-columns {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Single column layout by default */
+    gap: 10px; /* Reduced gap between columns */
+  }
+  
+  .contact-column {
+    background-color: rgba(70, 70, 70, 0.62); /* Dark background with slight transparency */
+    padding: 10px; /* Reduced padding for a more compact appearance */
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .contact-column:hover {
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .contact-column h3 {
+    font-size: 1.2rem; /* Smaller font size */
+    color: #ffffff; /* White color for section headings */
+    margin-bottom: 10px; /* Reduced margin */
+    display: inline-block; /* Only add the line under the text */
+    border-bottom: 3px solid #ff5722; /* Orange line below the heading */
+    padding-bottom: 5px; /* Space between the text and the line */
+  }
+  
+  .contact-column ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Use flexbox to align icons horizontally */
+    justify-content: center; /* Center-align items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    gap: 15px; /* Reduced gap between icons */
+  }
+  
+  .contact-column ul li {
+    font-size: 1.2rem; /* Smaller font size for icons */
+  }
+  
+  .contact-column ul li a {
+    color: #ff5722; /* Matching color for links */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem; /* Smaller font size for icons */
+  }
+  
+  .contact-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-column ul li a svg {
+    margin-right: 6px; /* Space between icon and text */
+    color: #ff5722; /* Icon color matching link color */
+  }
+  
+  .location {
+    margin-bottom: 10px; /* Reduced margin */
+  }
+  
+  .location h4 {
+    font-size: 1rem; /* Smaller font size */
+    color: #ff5722; /* Orange color for location headings */
+    margin-bottom: 5px; /* Reduced margin */
+  }
+  
+  .contact-details {
+    margin-top: 10px; /* Reduced margin */
+  }
+  
+  .contact-group {
+    margin-bottom: 10px; /* Reduced margin */
+  }
+  
+  .contact-group h4 {
+    font-size: 1rem; /* Smaller font size */
+    color: #ff5722; /* Dark color for contact group headings */
+    margin-bottom: 5px; /* Reduced margin */
+  }
+  
+  .contact-group p a.email-link {
+    font-size: 0.8rem; /* Smaller font size for text */
+    color: #ffffff; /* White color for text */
+  }
+  
+  .contact-group svg {
+    margin-right: 6px; /* Space between icon and text */
+    color: #ff5722; /* Icon color matching headings */
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .contact-columns {
+      grid-template-columns: repeat(2, 1fr); /* Two-column layout on tablets and up */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .contact-columns {
+      grid-template-columns: repeat(3, 1fr); /* Three-column layout on desktops and up */
+    }
+  }
+  

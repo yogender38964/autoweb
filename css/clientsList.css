@@ -1,0 +1,81 @@
+/* src/css/clientsList.css */
+.support-section {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text color */
+  padding: 40px 100px; /* Padding for section */
+  text-align: center; /* Center-align text */
+}
+
+.support-section .container {
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container */
+}
+
+.support-section h1 {
+  font-size: 1.5rem; /* Font size for the heading */
+  margin-bottom: 20px; /* Margin below the heading */
+}
+
+.slider {
+  position: relative; /* Relative position for positioning buttons */
+  overflow: hidden; /* Hide overflowing images */
+}
+
+.slider-wrapper {
+  display: flex; /* Display images in a row */
+  transition: transform 0.5s ease-in-out; /* Smooth transition for sliding effect */
+}
+
+.slider-images {
+  display: flex; /* Align images in a row */
+  width: 100%; /* Full width of the slider container */
+}
+
+.slider-item {
+  min-width: 20%; /* Show 5 images at a time, each taking 20% width */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  padding: 0 10px; /* Padding between images */
+  display: flex; /* Flexbox layout for centering images */
+  align-items: center; /* Center align items vertically */
+  justify-content: center; /* Center align items horizontally */
+}
+
+.slider-item img {
+  width: 100%; /* Full width of the slider item */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.prev, .next {
+  position: absolute; /* Absolute position for navigation buttons */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border: none; /* Remove border */
+  color: #fff; /* White text color */
+  font-size: 2rem; /* Font size for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  z-index: 10; /* Ensure buttons are on top */
+}
+
+.prev {
+  left: 10px; /* Position on the left */
+}
+
+.next {
+  right: 10px; /* Position on the right */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .support-section h1 {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  .prev, .next {
+    font-size: 1.5rem; /* Adjust font size for navigation buttons */
+  }
+
+  .slider-item {
+    min-width: 40%; /* Adjust width for smaller screens */
+  }
+}

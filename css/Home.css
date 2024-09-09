@@ -1,0 +1,66 @@
+/* src/css/Home.css */
+.Home-section {
+  padding: 80px 100px;
+  background: url('../Image/main.jpg') no-repeat center center; /* Ensure no repeat and center the image */
+  background-size: cover; /* Ensure the image covers the entire section */
+}
+
+.Home-section .container {
+  max-width: 30%; /* Adjusted max-width for better centering */
+  margin: 0; /* Center the container */
+}
+
+.Home-section h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Home-section p {
+  font-size: 1rem;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.learn-more-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: white;
+  background-color:  #ff5722; /* Orange background color */
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 20px; /* Space between text and button */
+}
+
+.learn-more-button:hover {
+  background-color:  #7e280d; /* Darker orange on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.learn-more-button:focus {
+  box-shadow: 0 0 0 3px rgba(255, 165, 0, 0.5); /* Add focus outline */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .Home-section {
+    padding: 80px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .Home-section h1 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .Home-section p {
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+  }
+
+  .learn-more-button {
+    font-size: 0.875rem; /* Adjust button font size for smaller screens */
+    padding: 10px 20px; /* Adjust button padding */
+  }
+}
